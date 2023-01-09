@@ -1,0 +1,58 @@
+.today-weather-card {
+  height: 350px;
+  background: #eef6fb;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  &__date {
+    font-size: 32px;
+    font-weight: 100;
+  }
+
+  &--body {
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+    justify-self: center;
+    gap: 32px;
+
+    svg {
+      width: 180px;
+      height: 180px;
+    }
+
+    &__temp {
+      font-size: 80px;
+      font-weight: 500;
+    }
+    &__name {
+      font-size: 28px;
+      font-weight: 100;
+    }
+  }
+
+  &--text {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  @media (max-width: 460px) {
+    &--body {
+      svg {
+        width: 140px;
+        height: 140px;
+      }
+
+      &__temp {
+        font-size: 50px;
+        font-weight: 500;
+      }
+      &__name {
+        font-size: 20px;
+        font-weight: 100;
+      }
+    }
+  }
+}

@@ -1,6 +1,19 @@
-# Getting Started with Create React App
+# Weather App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+### Requirements
+
+- Get the WeatherMap API key [here](https://openweathermap.org/)
+
+- Install dependencies using `npm install`
+
+- Rename .env.example to .env
+
+- Add your api key in .env file
+
+    ```REACT_APP_API_KEY=your-api-key```
+
 
 ## Available Scripts
 

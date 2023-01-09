@@ -1,0 +1,39 @@
+.city-list {
+  display: flex;
+  flex-direction: row;
+  margin-top: 32px;
+  &__item {
+    padding: 40px 80px;
+    span {
+      text-transform: uppercase;
+      color: #333339;
+      cursor: pointer;
+      font-size: 26px;
+      font-weight: lighter;
+    }
+    .active {
+      color: #5fb0e8;
+      font-weight: bold;
+    }
+  }
+
+  @media (max-width: 1024px) {
+    width: 100%;
+    justify-content: space-around;
+    &__item {
+      padding: 20px;
+    }
+  }
+
+  @media (max-width: 460px) {
+    &__item {
+      span {
+        font-size: 20px;
+      }
+      .active {
+        color: #5fb0e8;
+        font-weight: bold;
+      }
+    }
+  }
+}
